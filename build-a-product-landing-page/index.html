@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#video">About</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="main-title">Rubber Duck Debugger</h1>
+    <section id="features">
+      <img src="https://th.bing.com/th/id/OIP.tTSPYvVmuFPtuE9wsywmPgHaHa?w=164&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width=100>
+      <div class="feature">
+        <h2>Quality</h2>
+        <p>Made from high quality synthetic vinyl polymer plastic that is built to last.</p>
+      </div>
+      <img src="https://static.vecteezy.com/system/resources/previews/002/363/076/original/computer-icon-free-vector.jpg" width=100>
+      <div class="feature">
+        <h2>Your coding companion</h2>
+        <p>Articulate your thought process to the rubber  duck as you debug code.</p>
+      </div>
+      <img src="https://static.vecteezy.com/system/resources/previews/020/348/703/non_2x/wholesale-icon-vector.jpg" width=100>
+      <div class="feature">
+        <h2>Wholesale prices</h2>
+        <p>Share the joy with your colleagues and enjoy discounted rates.</p>
+      </div>
+    </section>
+    <video id="video" src="https://www.youtube.com" controls>
+    </video>
+    <section id="pricing">
+      <img class="item-img" src="https://th.bing.com/th/id/R.e0c3815edc4a2702f1b62de8dece5cf8?rik=jUi%2b4CACpQDH6Q&riu=http%3a%2f%2fclipart-library.com%2fimages%2frcnpyrzcR.jpg&ehk=Uhp2gKpvz2eQGIL26R4LA%2ff12Dg5N2VeSDvktVmR4%2bE%3d&risl=&pid=ImgRaw&r=0" width=400>
+      <div class="buy-container">
+        <p class="item-title">Duck Debugger</p>
+        <p class="price">$5.00</p>
+        <div class="description">
+          <br><br>
+          Description:
+          <br><br>
+          A yellow rubber duck that serves as an inanimate object to describe code to.
+          <ul>
+            <li>Shipping calculated on checkout</li>
+            <li>No refunds</li>
+          </ul>
+          </div>
+        <form class="order-form">
+            <label for="quantity-spinwheel">Quantity: <input id="quantity-spinwheel" class="quantity-spinwheel" type="number" min=1 value=1 required/></label>
+         
+            <button type="submit">Add to cart</button>
+        </form>
+    </section>
+    <section id="newsletter">
+      <p class="newsletter-title">Subscribe to our <b>newsletter</b> for daily tech news.</p>
+      <div class="news-form-container">
+          <ul>
+            <li>Choose from a variety of topics.</li>
+            <li>Free of charge.</li>
+            <li>You may opt out any time.</li>
+          </ul>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Email: <input id="email" name="email" type="email" placeholder="tom@example.com" required />
+      <input id="submit" type="submit" /></label>
+    </form>
+      </div>
+    </section>
+  </body>
+</html>

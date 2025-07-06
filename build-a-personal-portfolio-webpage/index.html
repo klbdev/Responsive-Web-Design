@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+  </head>
+  <body>
+    <section id="welcome-section">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome-section">About Me</a></li>
+          <li><a  href="#projects">Projects</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </nav>
+      <div class="welcome-title">
+        <h1>Hello, world! I am <span class="name">klbdev</span></h1>
+        <p class="about">Aspiring Software Engineer</p>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="project-header">My Coding Projects</h1>
+      <div class="project-tile">
+        <p class="project-title">Bulk Email Sender</p>
+        <img src="https://th.bing.com/th/id/OIP.ka7_Bmjd9DKDokO4mM-7kQHaEK?w=282&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="smtplib">
+        <p class="project-desc">A Python application that utilises openpyxl to retrieve data from an Excel sheet, and smtplib to send standardised emails in quick succession.</p>
+        <a class="project-link" href="https://github.com/klbdev/Bulk-email-sender" target="_blank">Check it out</a>
+      </div>
+      <div class="project-tile">
+        <p class="project-title">Payroll Management System</p>
+        <img src="https://th.bing.com/th/id/OIP.6rSPqfshMu1jzSSw2wt2DwHaFY?w=235&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="database">
+        <p class="project-desc">A SQLite application that computes the social security contributions from the salaries of employees in a company, and stores payroll records in a local database.</p>
+        <a class="project-link" href="https://github.com/klbdev/CPF-Payroll-Management-System" target="_blank">Check it out</a>
+      </div>
+      <div class="project-tile">
+        <p class="project-title">URL Shortener</p>
+        <img src="https://www.bing.com/th/id/OIP.oLE505zHlMeEcRds1t_JZQHaE7?w=271&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="url">
+        <p class="project-desc">A Python project that uses the pyshorteners library to shorten Uniform Resource Locators (URLs). It can also store shortened URLs into a SQL database.</p>
+        <a class="project-link" href="https://github.com/klbdev/URL-Shortener-and-Saver" target="_blank">Check it out</a>
+      </div>
+    </section>
+    <section id="links">
+      <h1 class="links-title">Check out my Github</h1>
+      <a id="profile-link" href="https://github.com/klbdev" target="_blank"><i class="fab fa-github"></i> Github: Your Repositories</a>
+    </section>
+  </body>
+</html>

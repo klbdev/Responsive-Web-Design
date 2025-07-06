@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#img-caption {
+  font-family: sans-serif;
+  font-size: 36px;
+  color: rgb(207, 205, 205);
+  padding: 10px;
+}
+
+#img-div {
+  text-align: center;
+  padding-bottom: 5px;
+  background-color: rgb(44, 44, 44);
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#tribute-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about {
+  width: 100%;
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+
+#about li {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: -36px;
+  font-size: 1.2em;
+}
+
+.laws-of-motion {
+  text-align: center;
+}
+
+.law {
+  font-size: 1.1em
+}
+
+.definition {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: rgb(44, 44, 44);
+  color: rgb(207, 205, 205);
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+footer a {
+  color: yellow;
+}

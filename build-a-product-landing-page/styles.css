@@ -1,0 +1,178 @@
+:root {
+  --navbar-color: rgba(0,0,0,0.8);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#nav-bar {
+  text-align: right;
+  background-color: var(--navbar-color);
+  width: 100%;
+}
+
+#header-img {
+  background-color: var(--navbar-color);
+  width: 200px;
+  padding: 20px;
+}
+
+#header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 30px;
+  font-size: 1.2rem;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+  padding: 4px;
+}
+
+li a:hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  
+}
+
+.main-title {
+  font-family: courier;
+  text-align: center;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  column-gap: 8px;
+  width: 50%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.feature p, .description {
+  font-size: 1.2rem;
+}
+
+#video {
+  display: block;
+  padding: 50px 0;
+  width: 480px;
+  height: 270px;
+  margin: 0 auto;
+}
+
+#pricing {
+  display: flex;
+  width: 70%;
+  max-width: 980px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+.buy-container {
+  width: 100%;
+}
+
+.item-title {
+  font-size: 2.6rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-family: courier;
+  margin: 0;
+}
+
+.quantity-spinwheel {
+  padding: 7px;
+  width: 38px;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background-color: var(--navbar-color);
+  color: white;
+  border-radius: 10px;
+}
+
+button[type="submit"]:hover, #submit:hover {
+  cursor: pointer;
+}
+
+#newsletter {
+  max-width: 900px;
+  min-width: 360px;
+  width:60%;
+  margin: 0 auto;
+}
+
+.newsletter-title {
+  font-family: courier;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.news-form-container {
+ display: grid;
+ grid-template-columns: 50% 50%;
+ font-family: courier;
+}
+
+* ul {
+  list-style-position: inside;
+}
+
+#form {
+  margin: auto;
+}
+
+#form input {
+  padding: 4px;
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  #header li {
+    margin: 0;
+  }
+
+  a {
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+
+  #pricing {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  #header li {
+    display: none;
+  }
+
+  #video {
+    width: 360px;
+    height: 200px;
+  }
+}

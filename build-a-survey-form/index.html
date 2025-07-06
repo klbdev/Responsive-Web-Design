@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programming survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h1 id="title">First Programming Language</h1>
+      <p id="description">Please complete this survey regarding your first programming language.</p>
+
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal particulars</legend>
+          <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="e.g. John Smith" required/></label>
+          <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="e.g. name@example.com" required/></label>
+          <label id="number-label" for="number">Age: <input id="number" type="number" placeholder="Age" min=0 max=120 required/></label>
+        </fieldset>
+        <fieldset class="survey">
+          <label for="language-dropdown">What is your first programming language?
+              <select id="dropdown" required>
+                <option value="">Select from dropdown</option>
+                <option value="1">Python</option>
+                <option value="2">JavaScript</option>
+                <option value="3">C</option>
+                <option value="4">Others</option>
+              </select>
+          </label>
+          <label>Do you love programming?</label>
+            <label for="love-programming">Yes!<input id="love-programming" name="love-programming" type="radio" value="yes" checked/></label>
+            <label for="love-programming">No<input id="love-programming" name="love-programming" type="radio" value="no" /></label>
+        <label>Describe your first programming project: <textarea id="first-project" rows="3" cols="50" placeholder="I made a rock, paper, and scissors game in Python."></textarea></label>
+        </fieldset>
+        <fieldset>
+          <label for="send-email"><input class="inline" id="send-email" type="checkbox" value="email-true" />Email a copy of the completed form.</label>
+        <label for="consent"><input class="inline" id="consent" type="checkbox" value="consent-true" required/>I consent to the use of submitted form data.</label>
+        </fieldset>
+        <input id="submit" type="submit" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Java Basics</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <header>Java Basics</header>
+        <li><a class="nav-link" href="#Hello,_Java">Hello, Java</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#Methods_and_Overloading">Methods and Overloading</a></li>
+        <li><a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a></li>
+        <li><a class="nav-link" href="#Encapsulation">Encapsulation</a></li>
+        <li><a class="nav-link" href="#Inheritance">Inheritance</a></li>
+        <li><a class="nav-link" href="#Polymorphism">Polymorphism</a></li>
+        <li><a class="nav-link" href="#Abstraction">Abstraction</a></li>
+        <li><a class="nav-link" href="#End">End</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="Hello,_Java" class="main-section">
+        <header>Hello, Java</header>
+        <p>Java is an object-oriented, statically typed programming language. Java source code (files with .java) is compiled into bytecode, which is then converted to machine code using the Java Virtual Machine (JVM). Java is used to develop mobile apps, web apps, desktop apps, games etc.</p>
+        <p>To create your first Java program, create a file called Main.java, and type the following code:</p>  
+        <pre><code>
+  public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello, Java");
+    }
+  }
+        </code></pre>
+        <p>This will print: "Hello, Java". Every Java program must contain the main() method, and the class name (Main) should match the filename (Main.java).</p>
+      </section>
+      <section id="Data_Types" class="main-section">
+        <header>Data Types</header>
+        <p>There are 8 different <i>primitive</i> data types in Java.</p>
+        <ol>
+          <li>byte: Stores whole numbers from -128 to 127</li>
+          <li>short: Stores whole numbers from -32,768 to 32,767</li>
+          <li>int: Stores whole numbers from -2,147,483,648 to 2,147,483,647</li>
+          <li>long: Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</li>
+          <li>char: Stores a single character/letter or ASCII values</li>
+          <li>float: Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</li>
+          <li>double: Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits</li>
+          <li>boolean: Stores true or false values</li>
+        </ol>
+        <p><i>Primitive</i>: basic data types built into Java.</p>
+      </section>
+      <section id="Conditionals" class="main-section">
+        <header>Conditionals</header>
+        <p>Create an <b>if</b> statement to run a block of Java code if a condition is <b>true</b>.</p>
+        <pre><code>
+  if (<i>condition</i>) {
+    // your code here
+  }
+        </code></pre>
+        <p>Create an <b>else</b> statement to run a block of Java code if a condition is <b>false</b>.</p>
+        <pre><code>
+  if (<i>condition</i>) {
+    // run code if condition is true
+  } else {
+    // run code if condition is false
+  }
+        </code></pre>
+        <p>Create an <b>else if</b> statement to specify a new condition if the previous condition is <b>false</b>.</p>
+        <pre><code>
+  if (<i>condition_1</i>) {
+    // run code if condition_1 is true
+  } else if (condition_2) {
+    // run code if condition_1 is false, and condition_2 is true
+  } else {
+    // run code if all above conditions are false
+  }
+        </code></pre>
+        <p>You can use a <b>switch case</b> statement instead of an if else statement.</p>
+        <pre><code>
+  switch (expression) {
+    case x:
+      // code block
+      break;
+    case y:
+      // code block
+      break;
+    default:
+      // code block
+  }
+        </code></pre>
+        <ul>
+          <li>break: to ensure that the program does not attempt the execute the next case.</li>
+          <li>default: code that runs if the condition in the switch does not match any values in the case.</li>
+        </ul>
+      </section>
+      <section id="Loops" class="main-section">
+        <header>Loops</header>
+        <p>Create a <b>while</b> loop to loop through a block of code as long as the specified condition is <b>true</b>.</p>
+        <pre><code>
+  while (<i>condition</i>) {
+    // your code here
+  }
+        </code></pre>
+        <p>Create a <b>do while</b> loop to execute a code block once, before entering the while loop.</p>
+        <pre><code>
+  do {
+    // your code here
+  } while (<i>condition</i>);
+        </code></pre>
+        <p>Create a <b>for</b> loop to loop through a block of code for a specified number of times.</p>
+        <pre><code>
+  for (int i = 0; i < 3; i++) {
+    // your code here
+  } 
+        </code></pre>
+        <p>This will run your code 3 times, as i begins with 0, and gets incremented by 1 for every iteration. When i = 3, the for loop ends.</p>
+        <p>You can also create a <b>for each</b> loop to iterate through an array. You may think of ":" in a for each loop as "in".</p>
+        <pre><code>
+  String[] fruits = ["Apple", "Cherry", "Mango"];
+
+  for (String fruit : fruits) {
+    // your code here
+  } 
+        </code></pre>
+      </section>
+      <section id="Methods_and_Overloading" class="main-section">
+        <header>Methods and Overloading</header>
+        <p>A method is a procedure associated with a class. You can call a method using the parenthesis e.g <i>object</i>.myMethod(). The syntax for methods is as follows:</p>
+        <p><i>[access modifier]</i> <i>[return type]</i> <i>methodName(parameter_1, ...)</i></p>
+        <pre><code>
+  public class Dog {
+    public String name;
+    public int age;
+
+    public Dog(String name, int age) { // constructor
+        this.name = name;
+        this.age = age;
+    }
+    
+    // void: this method does not return anything
+    public void feed() { // the "feed" method prints "You fed " + <i>name</i>
+      System.out.println("You fed " + this.name);
+    }
+
+    // int: this method returns a value of type int
+    public int getAge() { // the "getAge" method returns the integer age
+      return this.age;
+    }
+  }
+        </code></pre>
+        <p>Method overloading involves creating methods of the same name, but with different parameters. In this case, there are two methods "feed", but one of them requires a String input <i>food</i>.</p>
+        <pre><code>
+  public class Dog {
+    public String name;
+    public int age;
+    
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // void: this method does not return anything
+    public void feed() { // the "feed" method prints "You fed " + <i>name</i>
+      System.out.println("You fed " + this.name);
+    }
+
+    public void feed(String food) {
+      System.out.println("You fed " + this.name + " " + food);
+    }
+
+    // int: this method returns a value of type int
+    public int getAge() { // the "getAge" method returns the integer age
+      return this.age;
+    }
+  }
+        </code></pre>
+        <p>If you call the feed method and add a String input as a parameter, Java automatically recognises that you are calling the feed(String food) method, rather than the feed() method.</p>
+        <p>It is generally better to overload one method, rather than defining two or more methods that perform a similar function.</p>
+      </section>
+      <section id="Object_Oriented_Programming" class="main-section">
+        <header>Object Oriented Programming</header>
+        <p>The first two concepts of Object Oriented Programming (OOP) are <i>classes</i> and <i>objects</i>. A <i>class</i> is a blueprint for objects, and an <i>object</i> is an instance of a class.</p>
+        <p>There are 4 other concepts integral to OOP, namely <i>Encapsulation</i>, <i>Inheritance</i>, <i>Polymorphism</i>, and <i>Abstraction</i>.</p>
+        </section>
+      <section id="Encapsulation" class="main-section">
+        <header>Encapsulation</header>
+        <p>Encapsulation ensures that sensitive data is hidden. This is done through the <i>private</i> access modifier, and the usage of getters and setters.</p>
+        <pre><code>
+  public class Student {
+    private String name;
+
+    public String getName() {
+      return name;
+    }
+
+    public void setName(String newName) {
+      this.name = newName;
+    }
+  }
+        </code></pre>
+        <p>Attempting to access the name attribute (student.name) of Student  in the Main class leads to an error.</p>
+        <p>Instead, we should call getName() to read, or setName(String name) to write the String of the student's name. Since the getName and setName methods are public, we can access them from the Main class.</p>
+      </section>
+      <section id="Inheritance" class="main-section">
+        <header>Inheritance</header>
+        <p>A class can inherit all methods and attributes from another class. This is known as inheritance.</p>
+        <ul>
+          <li><b>superclass (parent class)</b>: the class inherited from.</li>
+          <li><b>subclass (child class)</b>: the class that inherits the superclass.</li>
+        </ul>
+        <p>To inherit a superclass, use the extends keyword in the subclass.</p>
+        <p>Consider the two classes, Vehicle and Car.</p>
+        <pre><code>
+  // Vehicle class
+  public class Vehicle {
+    private String name;
+    private int price;
+
+    public Vehicle(String name, int price) {
+      this.name = name;
+      this.price = price;
+    }
+
+    public String getName() {
+      return this.name;
+    }
+
+    public int getPrice() {
+      return this.price;
+    }
+  }
+
+  // Car class
+  public class Car extends Vehicle {
+    private int wheels = 4;
+
+    public Car(String name, int price) {
+      super(name, price);
+    }
+
+    public int getWheelCount() {
+      return this.wheels;
+    }
+  }
+        </code></pre>
+        <p>The Car class contains the method "getWheelCount" and attribute "int wheels" not in the Vehicle class. The Car class can access all methods and attributes (getName, getPrice, String name, int price) in the Vehicle class. However, the Vehicle class cannot access the method "getWheelCount" or attribute "int wheels".</p>
+      </section>
+      <section id="Polymorphism" class="main-section">
+        <header>Polymorphism</header>
+        <p>Polymorphism refers to objects having many forms, due to inheritance.</p>
+        <p>Consider the subclass Dog, and superclass Animal</p>
+        <pre><code>
+  // Animal class
+  public class Animal {
+    public void makeSound() {
+      System.out.println("A sound was made");
+    }
+  }
+
+  // Dog class
+  public class Dog extends Animal {
+    public void makeSound() {
+      System.out.println("woof");
+    }
+  }
+
+  // Main class
+  public class Main {
+  public static void main(String[] args) {
+    Animal animal = new Animal();
+    Animal dog = new Dog();
+
+    animal.makeSound();
+    dog.makeSound();
+  }
+        </code></pre>
+        <ul>
+          <li>animal.makeSound(); - prints "A sound was made"</li>
+          <li>dog.makeSound(); - prints "woof"</li>
+        </ul>
+        <p>Every class (Animal, Dog) have their own implementation of the same method. The Dog object can be saved in an Animal variable. Therefore, objects exhibit polymorphism from inheritance.</p>
+      </section>
+      <section id="Abstraction" class="main-section">
+        <header>Abstraction</header>
+        <p>An abstract class cannot be instantiated and needs to be inherited by subclasses. It can contain both regular and abstract methods.</p>
+        <pre><code>
+  // Abstract Shape class
+  public abstract class Shape {
+    // abstract method, no code within
+    public abstract volume();
+  }
+
+  // Sphere class
+  public class Sphere extends Shape {
+    private float radius;
+
+    public Sphere(float radius) {
+      this.radius = radius;
+    }
+
+    @Override
+    public float volume() {
+      return 4.0/3.0 * Math.PI * Math.pow(this.radius, 3);
+    }
+  }
+
+  // Main class
+  public class Main {
+    public static void main(String[] args) {
+      Sphere sphere = new Sphere(5.0); // correct
+      Shape shape = new Shape(); // wrong, cannot instantiate an abstract class.
+    }
+        </code></pre>
+      <p>An interface is another way to create abstraction. The <i>implements</i> keyword is used to implement an interface in a class. The interface can contain <b>only</b> methods with empty bodies.</p>
+      <pre><code>
+  // Animal interface
+  public interface Animal {
+    public void makeSound();
+    public void eat();
+  }
+
+  // Dog class
+  public class Dog implements Animal {
+    public void makeSound() {
+      System.out.println("woof");
+    }
+
+    public void eat() {
+      System.out.println("Dog is eating");
+    }
+  }
+      </code></pre>
+      <p>When a class implements an interface, it signs a "contract" to implement all methods within the interface.</p>
+      </section>
+      <section id="End" class="main-section">
+        <header>End</header>
+        <p>You should now have a basic understanding of Java.</p>
+      </section>
+    </main>
+  </body>
+</html>
