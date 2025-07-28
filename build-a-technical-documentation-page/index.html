@@ -290,7 +290,7 @@
   // Abstract Shape class
   public abstract class Shape {
     // abstract method, no code within
-    public abstract volume();
+    public abstract double volume();
   }
 
   // Sphere class
@@ -302,7 +302,7 @@
     }
 
     @Override
-    public float volume() {
+    public double volume() {
       return 4.0/3.0 * Math.PI * Math.pow(this.radius, 3);
     }
   }
